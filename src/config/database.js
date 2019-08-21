@@ -8,7 +8,7 @@ module.exports = {
   operatorAliases: false,
   define: {
     timestamps: true,
-    undercored: true,
+    underscored: true,
     underscoredAll: true
   },
 }
