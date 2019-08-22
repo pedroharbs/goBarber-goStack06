@@ -33,7 +33,7 @@ yarn install
 ## Migrations
 
 ```shell
-yarn && yarn sequelize db:migrate
+npx sequelize db:migrate
 ```
 
 ## Test
