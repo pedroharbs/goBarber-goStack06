@@ -9,6 +9,7 @@ const guestMiddleware = require('./app/middlewares/guest')
 
 const UserController = require('./app/controllers/UserController')
 const SessionController = require('./app/controllers/SessionController')
+const DashBoardController = require('./app/controllers/DashboardController')
 
 routes.use((req, res, next) => {
   res.locals.flashSuccess = req.flash('success')
@@ -27,9 +28,6 @@ routes.use('/app', authMiddleware)
 
 routes.use('/app/logout', SessionController.destroy)
 
-routes.get('/app/dashboard', (req, res) => {
-  console.log(req.session.user)
-  return res.render('dashboard')
-})
+routes.get('/app/dashboard', DashBoardController.index)
 
 module.exports = routes
