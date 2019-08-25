@@ -1,14 +1,16 @@
-{% extends "_layouts/auth.njk" %} {% block body %}
-<form action="/signin" method="post">
-  <img src="/images/logo.svg" height="42" />
+{% extends "_layouts/auth.njk" %}
 
-  {% include "_partials/flash.njk" %}
+{% block body %}
+  <form action="/signin" method="post">
+    <img src="/images/logo.svg" height="42" />
 
-  <input type="email" name="email" placeholder="Seu E-mail" />
-  <input type="password" name="password" placeholder="Senha Secreta" />
+    {% include "_partials/flash.njk" %}
 
-  <button type="submit">Entrar</button>
+    <input type="email" name="email" placeholder="Seu e-mail">
+    <input type="password" name="password" placeholder="Senha secreta">
 
-  <a href="/signup">Criar conta grátis</a>
-</form>
+    <button type="submit">Entrar</button>
+
+    <a href="/signup">Criar conta gráris</a>
+  </form>
 {% endblock %}
