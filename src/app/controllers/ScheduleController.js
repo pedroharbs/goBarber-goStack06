@@ -29,7 +29,6 @@ class ScheduleController {
       }
     })
     
-    console.log(appointments)
     return res.render('schedule/index', {
       appointments
     })
