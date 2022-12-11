@@ -20,7 +20,7 @@
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "connect-redis": "^3.4.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.16.2",
     "moment": "^2.24.0",
     "multer": "^1.4.2",
